@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "dualserver",
+  "version": "${version}",
+  "name": "Dual Server",
+  "description": "2つのサーバーに同時接続して切り替えるMOD",
+  "environment": "client",
+  "entrypoints": { "client": ["example.dualserver.DualServerClient"] },
+  "mixins": ["dualserver.mixins.json"],
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
